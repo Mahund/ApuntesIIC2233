@@ -1,0 +1,29 @@
+1) Estructuras Secuenciales:
+	-listas: mutable y no hasheable (buenas para agregar o eliminar del final)
+	-tuplas: inmutable y hasheable
+	-namedtuples: inmutable y hasheable (se puede acceder a cada posicion mediante un nombre) -> el codigo se vuelve mas legible
+
+	>Permiten ordenar elementos en una estructura
+
+	-Tuplas v/s Listas:
+		>lista: almacena coleccion ordenada (homogenea)
+		>tuplas: almacena estructura (heterogenea)
+		
+		-Semanticamente en las tuplas se guardan cosas con "significados" distintos pero en orden, ej: presidentes (nombre, apellido, año)
+		-Semanticamente en las listas se guardan elementos iguales, ej: lista de presidentes
+
+	-Stacks: se ocupa deque()
+		>Insercion es muy rapida (por ambos lados) -> append
+		>peek: stack[index[
+		>eliminar: (por ambos lados) -> pop [sacar de lista es lento debido a shifting -> movimiento de todos los elementos after del]
+
+	-Colas:
+		same
+
+	-Diccionarios:
+		>Estructura de maping
+		>Desde 3.6 diccionarios tambien estan ordenados
+
+	-Sets:
+		>representaciones de conjuntos matematicos
+		>ver si elemento pertenece a un conjunto

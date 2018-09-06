@@ -1,0 +1,4 @@
+2. EDD por Compresion:
+	-Listas: [function(elem) for elem in iterable]
+	-Set: {elem.atribute for elem in iterable if condicion}
+	-Dict: {elem.key: elem.value for elem in iterable if condicion}

@@ -1,0 +1,43 @@
+3. Iterables y Generadores
+	-Iterable:
+			>objeto sobre el cual se puede iterar (lista, diccionario, tupla, deque)
+			>implementa metodo __iter__()
+			>no es necesario metodo __getitem__() [sets son iterables sin ser indexables]
+
+	-Iterador:
+			>objeto que itera sobre un iterable
+			>es el objeto retornado por iter(iterable)
+			>mediante __next__() llamado por next(iterador) se retorna elemento a elemento del iterable
+			>cuando se acaban los elementos levanta excepcion StopIteration
+
+	-Resumen:
+		>Iterable debe tener metodo __iter__ que SIEMPRE retorne un iterador
+		>Iterador debe tener metodo __iter__ y __next__ que al hacer next(objeto) que retorne un VALOR
+
+	Ej:
+		1) Crear datos (nodos por ej)
+		2) Crear iterable con __iter__ = return Iterador
+		3) Crear iterador con __iter__ = return self
+			 if self.valor == None :con __next__ = raise StopIteration(mensaje)
+			else: valor = self.valor, self.valor= self.siguiente, return valor
+
+		**Si detenemos for sobre un iterador con break, podemos retomar de donde iba
+		**Cada iterador tiene memoria independiente del iterable
+
+	-Generadores: caso especial de iterador
+		>Al terminar de iterar sobre un generador este desaparece
+		>Generador de pares: (2*z for x in range(10))
+		>Generadores implementan __iter__, tambien se puede ocupar next()
+
+	-Funciones Generadoras:
+		>yield como return, pero que continua desde donde quedo
+		>puedes ocupar tanto for como next()
+		>funcion como: for in generador / for i in range: next(generador)
+
+	Ej2:
+		1) Crear datos (nodos por ej)
+		2) Crear iterable con __iter__ = while nodo_actual: yield nodo_actual, nodo_actual=nodo_actual.siguiente
+
+	-Funciones Generadoras send:
+		>al hacer variable = yield variable2, primero debe hacerse un NEXT para llegar al yield, y despues ocupar send
+		>next es igual a send(None)

@@ -1,0 +1,23 @@
+4. Lambda, Map, Filter, Reduce
+
+	-Lambda: forma alternativa de definir funciones anonimamente (sin nombre)
+		>Preludio:
+			*las funciones pueden asignarse a variables que se vuelven funcion
+			*pueden pasarse funciones como parametros de una funcion
+		>lambda parametros: valor_a_retornar
+
+	-Map: recibe funcion y al menos un iterable, retorna generador de valores editados
+		>map(f, iterable) == (f(x) for x in iterable)
+		>map(f, iterable1, iterable2) == (f(x, y) for x, y in zip(iterable1, iterable2))
+		>Ejecuta segun len del iterable mas corto
+
+	-Filter: recibe funcion (con return booleano) y un iterable, retorna generador de elementos que f==True
+		>filter(f, iterable) == (x for x in iterable if f(x))
+
+	-Reduce: recibe funcion (de 2 parametros) y un iterable [se debe importar de functools], retorna el resultado
+						de aplicar f a todos los valores del iterable de forma acumulada
+		>aplica sucesivamente funcion(x,y) donde x es acumulado e y es elemento de la secuencia
+		>OJO:
+			*iterable de len=1 no aplican la funcion
+			*se puede agregar iniciador como tercer parametro
+			*IMPORTA el orden de elementos en iterable

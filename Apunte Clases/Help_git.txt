@@ -1,0 +1,17 @@
+git:
+	clone
+	init
+	add
+	commit
+	push
+	status
+	pull
+	fetch
+
+linux:
+	ls
+	mkdir
+	touch
+	pwd
+	cd -A
+	

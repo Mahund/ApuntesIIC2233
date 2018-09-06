@@ -1,0 +1,18 @@
+1. Funciones de primera clase: tratadas como variable
+	>Asignadas:
+		- var = func
+		- var() == func()
+	>Anidadas:
+		- def hola(var): def chao() (definir funcion dentro otra)
+		- chao puede leer pero no editar a var  (scope)
+	>Argumentadas:
+		-def hola(a, b, func):
+	>Retornadas:
+		-def hola(): return func
+
+Ej:
+def uno(x):
+	var = "1"
+	def dos():
+		print(x)  # funciona
+		print(var)  # error

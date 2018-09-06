@@ -1,0 +1,29 @@
+5. Sets:
+	-Conocido como conjuntos, EDD heterogenea mutables no hasheables no ordenados que no repiten elementos sin index
+	-Estructura como conjuntos matematicos
+	-Almacenan objetos hasheables (igual que dicts)
+	-Utilizados para eliminar duplicados
+	-Busqueda con tiempo constante (independiente de nr de elementos almacenados)
+
+	-Metodos:
+		>Crear: set()
+		>Eliminar elementos repetidos: set(lista), set(tupla)
+		>Crear: {e1, e2, e3, ...}
+		>largo: len(conjunto)
+		>añadir: conjunto.add(element)
+		>eliminar: conjunto.remove(element) (error si no existe)
+		>eliminar: conjunto.discard(element)
+		>Existencia: element in conjunto (True/false) (MUuuuuuuuuuuuuuuuuuuuuuY EFICIENTE)
+		>Union: set1 | set2, o set1.union(set2)
+		>Interseccion: set1 & set2, o set1.intersection(set2)
+		>Diferencia: set1 - set2, o set1.difference(set2) (elementos de 1 que no estan en 2, importa orden)
+		>Dif Simetrica: set1 ^ set2, o set1.symmetric_difference(set2) (union - interseccion)
+
+	-Ejemplo:
+		>Representacion de Conjuntos
+
+	-Subconjuntos:
+		>Permite comparar conjuntos
+		>Metodos adicionales: 
+			*issuperset: >=
+			*issubset: <=

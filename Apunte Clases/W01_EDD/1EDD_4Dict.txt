@@ -1,0 +1,39 @@
+4. Diccionarios:
+	-Conocido como dict, EDD ordenada y mutable
+	-Estructura forma llave -> valor
+	-Funciona mediante "mapping"
+	-Busqueda con tiempo constante (independiente de nr de elementos almacenados)
+
+	-Requisitos:
+		>Llave unica
+		>Llave hasheable:
+			*implemente __hash__: retorna entero (inmutable)
+			*implemente __eq__: retorna true si 2 objetos son iguales
+			*Si __eq__ retorna True -> valor __hash__ debe ser el mismo
+
+	-Variables aceptadas como llaves: 
+		>int 
+		>str
+		>tuple
+		>instancias de clases (hash no depende de los atributos)
+
+	-Todo es aceptable como valor de una llave
+
+	-Metodos:
+		>Crear: dict() o {llave : valor}
+		>Acceder: diccionario[llave] (retorna valor)
+			*Si llave no existe envia error
+		>Acceder: diccionario.get(llave, que_retornar_en_vez_de_error)
+		>Eliminar: del diccionario[llave]
+		>Comprobar existencia: llave in diccionario (retorna True o False)
+		>dict.keys(): retorna lista de llaves
+		>dict.values(): retorna lista de valores
+		>dict.items(): retorna lista con pares (llave, valor)
+
+	-Ejemplo:
+		>Conteos de frecuencia
+
+	-DefaultDict:
+		>Permite asignar valor default a cada llave (soluciona problema si valor no existe)
+		>Reciben funcion callable que retorne el valor default deseado sin recibir parametro
+		>Si se llama llave que no existe, esa crea con valor dafult elegido

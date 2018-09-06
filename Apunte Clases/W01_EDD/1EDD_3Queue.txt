@@ -1,0 +1,29 @@
+3. Queues
+	-Conocido como colas, EDD almacena segun llegada (first-in ,First-out)
+	-Estructura como fila en un banco
+	-importada desde collections como deque()
+
+	-Metodos:
+		>Crear: deque()
+		>Enqueue: agrega elemento al final de la cola (append())
+		>Dequeue: saca elemento al inicio de la cola (popleft())
+		>Peek: ver elemento al inicio de la cola (cola[0])
+		>leng: len(cola)
+		>rotate: deque.rotate(a) (ultimos a elementos pasar inicio)
+
+	-Ejemplo:
+		>Colas de impresion
+
+	-Deques:
+		>Permite agregar/eliminar por ambos extremos
+		>Metodos adicionales: appendleft(), pop()
+
+	-Ventajas v/s Listas:
+		>Busqueda en deque es más lenta
+		>Eliminar elementos en deque es más veloz
+
+
+Tips:
+	*@staticmethod: metodo propio de la clase
+		>Logicamente no depende de sus variables pero va a ser utilizada ahi
+		>No recibe self, va antes de __init__

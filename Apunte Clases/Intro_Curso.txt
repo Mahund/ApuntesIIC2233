@@ -1,0 +1,18 @@
+14:09 09-08-2018
+
+-Cambiar sistema operativo por ojala ubuntu u otro similar
+
+- Jupyter / Pep8 / Stackoverflow
+
+-Git: add / commit / push
+Working -> Staging -> Local Repo -> Remote Repo
+
+-git reset HEAD~1 (vuelve al commit anterior)
+
+-En bash:
+		* pwd: donde estoy
+		* ls: lista directorios
+		* cd ..: vuelve atras
+		* mkdir : crea carpeta
+		* touch: crea archivo
+		* atom .: abre atom

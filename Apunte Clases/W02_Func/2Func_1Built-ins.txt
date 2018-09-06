@@ -1,0 +1,7 @@
+1. Paradigma y built-ins:
+	- __len__(): es llamado desde len(objeto) (largo del objeto)
+	- __getitem__(): llamado desde objeto[] (acceder a elementos y lo transforma en iterable -> se recorre hasta levantar excepcion IndexError)
+	- __reversed__(): llamado desde reversed(secuencia) retorna copia de secuencia en orden opuesto (ocupa __len__ y __getitem__)
+	- enumerate(secuencia): retorna lista de tuplas (index, valor) [for index, value in enumerate(list)]
+	- zip(secuencias): retorna iterable de tuplas. Elemento i de la lista es tupla con elementos i de todas las secuencias (hasta i de secuencia menor)
+	- * de *args es desempacador: zipped= list(zip(*args)), unzipped= list(zip(*zipped))

@@ -1,0 +1,33 @@
+2) Programacion Funcional: programacion meramente a traves de funciones
+	Dato = __metodos__ dunder (doble underscore)
+
+	a)
+		Iterable: implementa __iter__
+		Iterador: implementa __iter__ y __next__
+
+	b)
+		Generador: permite iterar sin sobrecargar la memoria ram
+		Funcion Generadora: ocupa yield para retornar generador
+
+	c)
+		__len__: permite retornar largo de un objeto
+		__reversed__: permite retornar secuencia invertida
+		__getitem__: permite ingresar al index de la secuencia
+
+	d)
+		enumerate: devuelve tupla con (index, valor) de una secuencia
+		zip: devuelve iterable con tuplas en que iesima tupla tiene iesimos elementos de las secuencias
+		reversed: da vuelta secuencia
+		sorted* : devuelve una lista
+
+	e)
+		Set comprension
+		Lista comprension
+		Diccionario comprension
+		tupla (tupla de generador)
+
+	f)
+		lambda: funciones anonimas directas
+		map: 
+		filter
+		reduce 

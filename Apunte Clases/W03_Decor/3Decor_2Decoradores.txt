@@ -1,0 +1,26 @@
+2. Decoradores: patron que añade nueva funcionalidad sin editarlo
+
+Ej:
+def decorador(funcion_origial):
+	def wrapper():
+		funcion_original()
+		print("Nueva actividad")
+	return wrapper
+
+def paya():
+	print("aro aro")
+
+paya = decorador(paya) # lo mismo que @decorador (azucar sintactic)
+
+Ej2:
+def generador_decoradores(parametro):
+	def decorador(funcion):
+		def wrapper(*args, **kwargs):
+			new_func = funcion(*args, **kwargs)
+			return new_func
+		return wrapper
+	return decorador
+
+@generador_decoradores("Hola)
+def funcion(arg):
+	pass

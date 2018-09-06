@@ -1,0 +1,13 @@
+2. Stacks (Principalmente una lista)
+	-Conocido como pilas, EDD estilo de conjunto de elementos uno encima del otro.
+	-Estructura vertical como columna de platos
+	-Iniciada con list()
+
+	-Metodos:
+		>Push: agregar elemento al tope (last-in)
+		>Pop: eliminar elemento al tope (first-out)
+		>Peek: muestra elemento tope (se ocuap pila[-1])
+		>leng: nr elementos (len(pila))
+
+	-Ejemplo:
+		>Back en browsers

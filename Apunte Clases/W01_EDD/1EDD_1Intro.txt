@@ -1,0 +1,26 @@
+1. Introduccion
+	-Estructura de Datos: forma especializada de agrupar y almacenar datos
+				de una forma que permite ser accedidos
+    *Basadas en arreglos:
+	-Aquellas que se basan en un ordenamiento secuencial (index)
+	-Tuplas:
+		>elementos ordenados e inmutables (no se pueden agregar ni eliminar)
+		>si es posible editar contenidos dentro de los elementos
+		>heterogeneas: permiten ingresar elementos de distinto tipo
+		>truco desempaquetar: almacenar en varias variable tuplas retornadas de func
+		>ocupar slicing [start, end, step]
+		>for
+
+	-NamedTuples:
+		>permite definir campos en los que se ingresaran elementos
+		>un tipo de Clase sin metodos
+		>inmutable tras ser instanciada
+
+	-Lista:
+		>elementos ordenados y mutables
+		>heterogeneas
+		>append, extend, insert, slicing, sort, for
+
+Tips:
+	*Identificador unico en Clases: atributo en def de clase antes que __init__
+		>Compartido por todas las instancias
