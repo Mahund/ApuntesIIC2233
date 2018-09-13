@@ -15,12 +15,12 @@ class Ser(ABC):
 
     @property
     def vida(self):
-        "getter"
+        "Getter"
         return self._vida
 
     @vida.setter
     def vida(self, value):
-        "setter"
+        "Setter"
         self._vida = value
         if self._vida < 0:
             self._vida = 0
