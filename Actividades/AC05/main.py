@@ -21,9 +21,10 @@ class Ser(ABC):
     @vida.setter
     def vida(self, value):
         "Setter"
-        self._vida = value
-        if self._vida < 0:
-            self._vida = 0
+        self._vida = max(value, 0)
+        # self._vida = value
+        # if self._vida < 0:
+        #    self._vida = 0
 
     @abstractmethod
     def atacar(self, enemigo):
@@ -102,3 +103,6 @@ if __name__ == '__main__':
     SENSEI = Supersaiyayin("Goku", 2, 2, 90, 4)
     OMAE = Hakashis("Wa", 1.5, 1.5, 90, 3)
     MOU = Hakashis("Shindeiru", 1.5, 1.5, 90, 3)
+    JAVI = Supersaiyayin("Nymeria", 3.5, 2.1, 33, 7)
+    YO.atacar(TU)
+    JAVI.atacar(YO)
