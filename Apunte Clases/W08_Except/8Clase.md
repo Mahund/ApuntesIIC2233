@@ -15,7 +15,7 @@ _By: Mahund_
 
     1. `except`: corre codigo si en try fue levantado cierto error
 
-    1. `else`: si ningun except se corre (codigo que sabemos que no se caera)
+    1. `else`: si ninguna excepcion se levanta (codigo que sabemos que no se caera)
 
     1. `finally`: siempre se corre (incluso si en try hay un return y estamos dentro de una funcion)
 

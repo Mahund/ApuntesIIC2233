@@ -25,7 +25,7 @@ _By: Mahund_
 
 - **except:** codigo perteneciente al *scope* de esta sentencia es ejecutado dependiendo del tipo de *excepcion levantada*
 
-- **else:** codigo perteneciente al *scope* de esta sentencia es ejecutado si no se ha ejecutado ningun *except* anterior (similar a if/elif/else)
+- **else:** codigo perteneciente al *scope* de esta sentencia es ejecutado si no se ha levantado ningun *except* anterior (similar a if/elif/else, se ejecuta solo si try funciona correctamente)
 
 - **finally:** codigo perteneciente al *scope* de esta sentencia siempre es ejecutado. Normalmente utilizado con funciones de *limpieza*: cerrar archivos, etc. 
 
