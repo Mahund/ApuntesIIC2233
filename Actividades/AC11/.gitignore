@@ -1,0 +1,9 @@
+*.pdf
+*.jojo
+*.shrek
+/shrek0
+/shrek1
+/shrek2
+/shrek3
+/shrek4
+generar_shrek.py
