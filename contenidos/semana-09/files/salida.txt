@@ -1,0 +1,7 @@
+Línea escrita por thread # 0
+Línea escrita por thread # 1
+Línea escrita por thread # 2
+Línea escrita por thread # 3
+Línea escrita por thread # 4
+Línea escrita por thread # 5
+Línea escrita por thread # 6

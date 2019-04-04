@@ -46,7 +46,7 @@ ventana superior', self)
 
     def open_window(self, state):
         """
-        Función que dado un estado, cambia la ventana de inicio por ladeljuego.
+        Función que dado un estado, cambia la ventana de inicio por ladeljuego
         :param state: bool
         :return: none
         """

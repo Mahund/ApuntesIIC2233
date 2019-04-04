@@ -1,0 +1,20 @@
+<svg height="150" version="1.1" viewBox="0 0 60 30" width="300" 
+  xmlns="http://www.w3.org/2000/svg" 
+  xmlns:cc="http://creativecommons.org/ns#" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <defs>
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i');
+    </style>
+  </defs>
+  <g id="layer1" transform="translate(0.1, 0.1)" fill-opacity="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-opacity="1">
+    <circle cx="15" cy="15" id="path6776" r="14" fill="#d3d3d3" fill-rule="nonzero" opacity="1" stroke="gray" stroke-dashoffset="0" stroke-miterlimit="4" stroke-width=".7"/>
+    <text style="font-size: 10; font-family: 'Source Sans Pro'; stroke: red; stroke-width: .3; fill: red">
+      <tspan x="35" y="17.5">Nodo</tspan>
+    </text>
+    <text style="font-size: 8; font-family: 'Source Sans Pro'; fill: black">
+      <tspan x="9.6" y="17">key</tspan>
+    </text>
+  </g>
+</svg>

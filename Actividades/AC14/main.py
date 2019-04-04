@@ -78,6 +78,7 @@ def escribir_respuesta(datos):
         file.write(f"{fecha} --> {titulo}: {url}\n")
         name = url.split("/")[-1]
         path = os.path.join("imagenes", name)
+        print(f"Se agrega archivo {name}")
         descargar_imagen(url, path)
 
 
